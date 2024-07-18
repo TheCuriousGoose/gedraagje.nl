@@ -13,6 +13,16 @@
             </li>
         </ul>
     @endcan
+    @can('qoutes.show')
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a href="{{ route('quotes.index') }}" class="nav-link @if (request()->routeIs('quotes.*')) active @endif">
+                    <i class="fa fa-comment"></i>
+                    Quotes
+                </a>
+            </li>
+        </ul>
+    @endcan
     <hr>
     @php
         $routeActive =

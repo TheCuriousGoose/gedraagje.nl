@@ -19,5 +19,13 @@ return [
         'name' => 'Name',
         'guard_name' => 'Guard Name',
         'actions' => 'Actions'
+    ],
+    'quotes' => [
+        'id' => 'ID',
+        'quote' => 'Quote',
+        'qoutee_name' => 'Qoutee Name',
+        'user_id' => 'Author',
+        'created_at' => 'Created At',
+        'actions' => 'Actions'
     ]
 ];

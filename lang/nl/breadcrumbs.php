@@ -23,5 +23,10 @@ return [
         'index' => 'Rollen',
         'edit' => 'Bewerk :name',
         'create' => 'Rol aanmaken'
+    ],
+    'quotes' => [
+        'index' => 'Quotes',
+        'edit' => 'Bewerk :name',
+        'create' => 'Quote aanmaken'
     ]
 ];

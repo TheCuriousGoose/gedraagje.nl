@@ -4,6 +4,7 @@ namespace App\Tables;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 class Table
 {
@@ -77,7 +78,7 @@ class Table
         return $table;
     }
 
-    public function ajaxSearch($request)
+    public function ajaxSearch(Request $request)
     {
         $query = $this->getModelQuery();
 

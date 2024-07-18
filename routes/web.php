@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProfileController;
@@ -25,3 +26,5 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('language/{locale}', [LanguageController::class, 'language'])->name('language-switch');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');

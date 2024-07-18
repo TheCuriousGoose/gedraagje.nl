@@ -76,3 +76,17 @@ Breadcrumbs::for('roles.create', function (BreadcrumbTrail $trail) {
     $trail->parent('roles.index');
     $trail->push(__('breadcrumbs.roles.create'));
 });
+
+Breadcrumbs::for('quotes.index', function (BreadcrumbTrail $trail) {
+    $trail->push(__('breadcrumbs.quotes.index'), route('quotes.index'));
+});
+
+Breadcrumbs::for('quotes.create', function (BreadcrumbTrail $trail) {
+    $trail->parent('quotes.index');
+    $trail->push(__('breadcrumbs.quotes.create'));
+});
+
+Breadcrumbs::for('quotes.edit', function (BreadcrumbTrail $trail, $quote) {
+    $trail->parent('quotes.index');
+    $trail->push(__('breadcrumbs.quotes.edit', ['name' => $quote->name]));
+});
